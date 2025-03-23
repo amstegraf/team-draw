@@ -1,0 +1,11 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/src"
+  schedule:
+    interval: daily
+    time: "01:00"
+  groups:
+    python-packages:
+      patterns:
+        - "*"
